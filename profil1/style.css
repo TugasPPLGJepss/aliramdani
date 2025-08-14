@@ -13,10 +13,10 @@ nav ul{
 }
 nav a{
     text-decoration: none;
-    color: rgb(83, 221, 70);
+    color: rgb(228, 238, 227);
 }
 header{
-    background-color: rgba(255, 11, 235, 1);
+    background-color: rgb(4, 148, 231);
     color: white;
     padding: 1rem;
 }
@@ -27,13 +27,13 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(39, 19, 94);
+    background-color: rgb(20, 17, 29);
     padding: 3rem;
 }
 .hero img{
     width: 150px;
     height: 150px;
-    border-radius: 100%;
+    border-radius: 100%;z
     margin-right: 8rem;
     
 }
