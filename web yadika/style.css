@@ -1,0 +1,32 @@
+body{
+    margin: 0
+}
+img{
+border-radius: 100%;
+}
+nav{
+    display: flex;
+    gap:5rem
+}
+nav ul{
+display: flex;
+list-style: none;
+gap:5rem
+
+}
+img{
+   height: 100px; 
+   width: 100px;
+   border-radius: 50%;
+}
+nav a{
+    text-decoration:none
+}
+header{
+background-color: rgb(12, 223, 142);
+color:rgb(23, 184, 184)
+padding 4rem
+}
+nav a:hover{
+color:aquamarine
+}
