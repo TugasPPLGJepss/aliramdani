@@ -8,7 +8,9 @@ padding-bottom: 10rem;
 }
 nav{
     display: flex;
-    gap:5rem
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
 }
 nav ul{
 display: flex;
@@ -32,6 +34,11 @@ border-left: 0cqh;
 height: 100px;
 width: 100px;
 padding: 1rem;
+}
+img:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+    border-left: 0cqh;
 }
 
 
