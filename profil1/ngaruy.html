@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+<script>
+  let namaProduk = "Komputer";
+  let stokAwal = 50;
+  let daftarTransaksi = [15, -20, 30, -10, -5];
+  
+  // Hitung total bersih transaksi
+  let totalBersih = daftarTransaksi[0] 
+                  + daftarTransaksi[1] 
+                  + daftarTransaksi[2] 
+                  + daftarTransaksi[3] 
+                  + daftarTransaksi[4];
+
+  let stokAkhir = stokAwal + totalBersih;
+
+  // Hitung stok tiap hari
+  let stokHari1 = stokAwal + daftarTransaksi[0];
+  let stokHari2 = stokHari1 + daftarTransaksi[1];
+  let stokHari3 = stokHari2 + daftarTransaksi[2];
+  let stokHari4 = stokHari3 + daftarTransaksi[3];
+  let stokHari5 = stokHari4 + daftarTransaksi[4];
+
+  document.write("<h3>===== Laporan Audit Stok Produk Toko Komputer =====</h3>");
+  document.write(`Nama produk = ${namaProduk} <br>`);
+  document.write(`Stok awal = ${stokAwal} <br>`);
+  document.write(`Total perubahan transaksi = ${totalBersih} <br>`);
+  document.write(`Stok akhir = ${stokAkhir} <br><br>`);
+
+  document.write("<b>Detail Stok per Hari:</b><br>");
+  document.write(`Hari 1: ${stokHari1} <br>`);
+  document.write(`Hari 2: ${stokHari2} <br>`);
+  document.write(`Hari 3: ${stokHari3} <br>`);
+  document.write(`Hari 4: ${stokHari4} <br>`);
+  document.write(`Hari 5: ${stokHari5} <br>`);
+</script>
+</body>
+</html>

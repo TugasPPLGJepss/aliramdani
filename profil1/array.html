@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+<script>
+  let namaProduk = "Komputer";
+  let stokAwal = 50;
+  let daftarTransaksi = [15, -20, 30, -10, -5];
+  let totalBersih = 0;
+  let stokstokAkhir =0;
+ totalBersih = daftarTransaksi[0] + daftarTransaksi[1] + daftarTransaksi[2] + daftarTransaksi[3] + daftarTransaksi[4];
+  let stokAkhir = stokAwal + totalBersih
+ 
+let stokHari1 = stokAwal + daftarTransaksi[0]
+let stokHari2 = stokHari1 + daftarTransaksi[1]
+let stokHari3 = stokHari2 + daftarTransaksi[2]
+let stokHari4 = stokHari3 + daftarTransaksi[3]
+let stokHari5 = stokHari4 + daftarTransaksi[4]
+document.write("<h3> ===== Laporan Audit Stok Produk Toko Komputer =====</h3>")
+document.write(`Nama produk = ${namaProduk} <br>`);
+document.write(`Stok awal = ${stokAwal} <br>`);
+document.write(`Total perubahan transaksi = ${totalBersih} <br>`);
+
+
+</script>
+</body>
+</html>
