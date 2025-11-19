@@ -22,8 +22,21 @@ let stokHari4 = stokHari3 + daftarTransaksi[3]
 let stokHari5 = stokHari4 + daftarTransaksi[4]
 document.write("<h3> ===== Laporan Audit Stok Produk Toko Komputer =====</h3>")
 document.write(`Nama produk = ${namaProduk} <br>`);
-document.write(`Stok awal = ${stokAwal} <br>`);
-document.write(`Total perubahan transaksi = ${totalBersih} <br>`);
+document.write(`Stok awal = ${stokAwal} pcs <br>`);
+document.write(`-hari ke-1 (masuk) + ${daftarTransaksi[0]} | stok  jadi = ${stokHari1} pcs <br>`);
+document.write(`-hari ke-2 (keluar)+ ${daftarTransaksi[1]} | stok  jadi = ${stokHari2} pcs <br>`);
+document.write(`-hari ke-3 (masuk) + ${daftarTransaksi[3]} | stok jadi = ${stokHari3}  pcs <br>`);
+document.write(`-hari ke-4 (keluar)+ ${daftarTransaksi[3]} | stok jadi = ${stokHari4}  pcs <br>`);
+document.write(`-hari ke-5 (keluar)+ ${daftarTransaksi[4]} | stok jadi = ${stokHari5}  pcs <br>`);
+
+document.write("<h3>----------------------------------------<h3>")
+document.write(`Total bersih = ${totalBersih} pcs <br>`);
+document.write("<h3>----------------------------------------<h3>")
+document.write(` STOK AKHIR KE-5 ***= ${stokAkhir} pcs  <br>`)
+document.write("<h3>----------------------------------------<h3>")
+document.write("<h3>===== Data Terarsip Selesai =====<h3>")
+
+
 
 
 </script>
