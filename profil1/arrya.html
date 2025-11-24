@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Audit Penjualan</title>
+</head>
+<body>
+
+<script>
+// ===== Tahap 1: Input =====
+let namaBisnis = "Jasa Desain Grafis";
+let pendapatanHarian = [450, 620, 350, 700, 580, 400, 810];
+let transaksiTambahan = 950;
+
+let statusPerforma = [];
+let totalHari = 0;
+let totalPendapatanKeseluruhan = 0;
+
+// ===== Tahap 2: Proses =====
+
+// 1. Tambahkan transaksi tambahan
+pendapatanHarian.push(transaksiTambahan);
+
+// 2. Hitung total hari
+totalHari = pendapatanHarian.length;
+
+// 3. Status performa menggunakan .map + if else
+statusPerforma = pendapatanHarian.map(function(pendapatan){
+    if(pendapatan > 500){
+        return "Sukses";
+    } else {
+        return "Standar";
+    }
+});
+
+// 4. Hitung total pendapatan secara manual
+totalPendapatanKeseluruhan =
+    pendapatanHarian[0] +
+    pendapatanHarian[1] +
+    pendapatanHarian[2] +
+    pendapatanHarian[3] +
+    pendapatanHarian[4] +
+    pendapatanHarian[5] +
+    pendapatanHarian[6] +
+    pendapatanHarian[7];
+
+// ===== Tahap 3: Output =====
+
+document.write("<h3>===== Laporan Audit Penjualan Jasa Desain =====</h3>");
+document.write(`Bisnis: ${namaBisnis}<br>`);
+document.write(`Durasi Audit: ${totalHari} Hari (menggunakan length)<br><br>`);
+
+document.write("Data Pendapatan (setelah push):<br>");
+document.write(`[${pendapatanHarian.join(", ")}]<br><br>`);
+
+document.write("---------------------------------------------------<br>");
+document.write("Analisis Performa Harian:<br>");
+document.write("---------------------------------------------------<br>");
+
+pendapatanHarian.forEach(function(p, index){
+    document.write(`Hari ${index + 1} (Rp ${p}.000): Status ${statusPerforma[index]}<br>`);
+});
+
+document.write("---------------------------------------------------<br>");
+document.write(`TOTAL PENDAPATAN KESELURUHAN: Rp ${totalPendapatanKeseluruhan}.000`);
+</script>
+
+</body>
+</html>

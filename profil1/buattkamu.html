@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confession</title>
+    <style>
+        body { 
+            font-family: Arial; 
+            text-align: center; 
+            background: #ffe6f2;
+        }
+        .box {
+            margin-top: 100px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #ff5c8d;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ff2c6d;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Aku Mau Bilang Sesuatu...</h2>
+        <button onclick="confess()">Klik Disini</button>
+        <p id="msg"></p>
+    </div>
+
+    <script>
+        function confess() {
+            document.getElementById("msg").innerHTML = 
+                "<br><b>AKU SUKA SAMA KAMU WALAUPUN KAMU BUKAN SIAPA SIAPA AKU MAKASI</b><br>Mau ga kamu jadi seseorang yang spesial buat aku?";
+        }
+    </script>
+</body>
+</html>
